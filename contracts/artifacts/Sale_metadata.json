@@ -1,0 +1,227 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerSet",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "amount",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "bet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dai",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "daiprice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_daiAddr",
+						"type": "address"
+					}
+				],
+				"name": "setDAIAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userBetArr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawDAI",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"changeOwner(address)": {
+					"details": "Change owner",
+					"params": {
+						"newOwner": "address of new owner"
+					}
+				},
+				"getOwner()": {
+					"details": "Return owner address ",
+					"returns": {
+						"_0": "address of owner"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GraySale.sol": "Sale"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2_Owner.sol": {
+			"keccak256": "0x31a3f010bea285f173ae50045ba863447c1adedaf9857cb6e09bb3477feac6e6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://206c5661a80259a2e909f8905d6976e18b0fe46f058f62ed563656b4c8ffbfaa",
+				"dweb:/ipfs/QmbRVXZpmGpiH6g2P24QCr8TRbKo9U2LQNn6yNQjBvkYLU"
+			]
+		},
+		"contracts/GraySale.sol": {
+			"keccak256": "0xc5127c8bc596cc1b180d6eec166c14d83e7707c01901170cee451545166ab027",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://95ea0e0b04182f426536b5cd5c6f08374b2b25492d5b9df2c741fc419f7f3176",
+				"dweb:/ipfs/QmaxTZynsaDbErpRPsx5hWsTYZ2PUpNbL4K9woms7WHVbB"
+			]
+		},
+		"contracts/IERC20.sol": {
+			"keccak256": "0x4148ffa71d6f44cd5ac04ae7914a1c1ba9fe13129a279eab66cadc0489f4d728",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://795d23086de655d6097b846604819364aadf284f993cbb0c96092be1b45be88c",
+				"dweb:/ipfs/QmdXoTdgJeB6wXcNXq5QwEua5VEMvqQSDtLwAZY9e5r9dz"
+			]
+		},
+		"contracts/Safemath.sol": {
+			"keccak256": "0x5ad32ae44695f82c1da3330eb7d01e5742744596a84796ae0b2ec7abe1a9d49f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc50c578a0a2afc06a236713063d3c4683b57ae0a5fc3046788e1fee405e2fd5",
+				"dweb:/ipfs/QmRvYDwMDH5kMAkVDiiSTm7yC7MxZQTfds4DnpmBBXt3TS"
+			]
+		}
+	},
+	"version": 1
+}

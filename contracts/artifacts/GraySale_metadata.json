@@ -1,0 +1,271 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "amount",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "bet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dai",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "daiprice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "draw",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_length",
+						"type": "uint256"
+					}
+				],
+				"name": "rand",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_daiAddr",
+						"type": "address"
+					}
+				],
+				"name": "setDAIAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userBetArr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawDAI",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GraySale.sol": "GraySale"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Context.sol": {
+			"keccak256": "0x851c3d8e30ea37c35947f620812e2e18718ac9312ef8d84b643fc46d94269540",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7c02fec97a236e7eda6646bb8aef30a00f134710ffc29f1965c27dc257cc58a3",
+				"dweb:/ipfs/QmNoqNHYS9HP9u8J3bG5kVztMNcQ42kYiiiKDN8tY94gvY"
+			]
+		},
+		"contracts/GraySale.sol": {
+			"keccak256": "0x4e3d7747b935376a6f96a97b58fd388445695142503b5ca50f0c87873a620a35",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a19a2bc2440f2dbbf99fabedf8b4d0fceac23fa3dfb09aacfc0747ca6e52462e",
+				"dweb:/ipfs/QmTemGycuLgLaDdqEzvWo5BLfsdtEesqSyvEAwSQuNeSKK"
+			]
+		},
+		"contracts/IERC20.sol": {
+			"keccak256": "0x4148ffa71d6f44cd5ac04ae7914a1c1ba9fe13129a279eab66cadc0489f4d728",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://795d23086de655d6097b846604819364aadf284f993cbb0c96092be1b45be88c",
+				"dweb:/ipfs/QmdXoTdgJeB6wXcNXq5QwEua5VEMvqQSDtLwAZY9e5r9dz"
+			]
+		},
+		"contracts/Ownable.sol": {
+			"keccak256": "0x14245831e1c86e82bdcfa7ab939e1c1d3da3cc07f54d1d6afdb26012c984c694",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5397703dad0643364e49e3934315b487ab08d6c3481435777e0739babafb0f0b",
+				"dweb:/ipfs/QmQPWgBvtwzJSy5t6Jz94cPHs1A6innsxcNqGnqmJncc7J"
+			]
+		},
+		"contracts/Safemath.sol": {
+			"keccak256": "0x5ad32ae44695f82c1da3330eb7d01e5742744596a84796ae0b2ec7abe1a9d49f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc50c578a0a2afc06a236713063d3c4683b57ae0a5fc3046788e1fee405e2fd5",
+				"dweb:/ipfs/QmRvYDwMDH5kMAkVDiiSTm7yC7MxZQTfds4DnpmBBXt3TS"
+			]
+		}
+	},
+	"version": 1
+}

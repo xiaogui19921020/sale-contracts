@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_length",
+						"type": "uint256"
+					}
+				],
+				"name": "rand",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GrayDraw.sol": "GrayDraw"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/GrayDraw.sol": {
+			"keccak256": "0x42e7109ec3212e02fb85805b11205c02cc05d392792a1530cc4c44f8e5e8275b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d2dad24b1c7bae035470e9bdf1043b9b896a0b96f870eb6ffbb1fd1ccb2d9570",
+				"dweb:/ipfs/QmdAJJamYrfzWGmrqvnEEYqL364KrVMnUiXV8iP8MuCLMx"
+			]
+		}
+	},
+	"version": 1
+}
